@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: llama-trainer
+Version: 0.1.0
+Summary: Production-ready Llama model training orchestration and utilities.
+Author-email: Your Name <you@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/your-org/llama-trainer
+Project-URL: Repository, https://github.com/your-org/llama-trainer
+Keywords: llama,training,pytorch,llm,fine-tuning
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: train
+Requires-Dist: torch>=2.1.0; extra == "train"
+Requires-Dist: transformers>=4.35.0; extra == "train"
+Requires-Dist: accelerate>=1.14.0; extra == "train"
+Requires-Dist: datasets>=2.15.0; extra == "train"
+Requires-Dist: safetensors>=0.4.0; extra == "train"
+Requires-Dist: peft>=0.5.0; extra == "train"
+Requires-Dist: wandb>=0.15.0; extra == "train"
+Requires-Dist: loguru>=0.7.0; extra == "train"
+
+# Llama Trainer
+
+Production-ready repository for training and fine-tuning Llama-compatible models with PyTorch, Transformers, Accelerate, and PEFT.
+
+## What is included
+
+- Training orchestration and configuration
+- Dataset preparation and validation
+- Model loading, fine-tuning, and checkpointing
+- Experiment tracking with Weights & Biases
+- GitHub Actions CI for linting and tests
+- Package metadata and Python module structure
+
+## Quick start
+
+1. Create a Python environment with Python 3.11+
+2. Install runtime dependencies: `pip install -e .[train]`
+3. Configure `configs/train.yaml`
+4. Run training: `python -m llama_trainer.train --config configs/train.yaml`
+
+## Repository structure
+
+- `src/llama_trainer`: core training package
+- `configs`: example YAML configuration files
+- `tests`: unit and integration tests
+- `.github/workflows`: CI definitions
+- `scripts`: helper scripts for environment setup and dataset checks
