@@ -41,5 +41,9 @@ class TrainingConfig:
         return cls(**data)
 
     def save(self, path: Path) -> None:
+        data = dataclasses.asdict(self)
+        if isinstance(data.get("output_dir"), Path):
+            data["output_dir"] = str(data["output_dir"])
+
         with path.open("w", encoding="utf-8") as stream:
-            yaml.safe_dump(dataclasses.asdict(self), stream)
+            yaml.safe_dump(data, stream)

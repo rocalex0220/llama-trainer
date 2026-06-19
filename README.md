@@ -25,7 +25,7 @@ Production-ready repository for training Llama models (including Llama 4 Maveric
 
 ### Chinese Training on Llama 4 Maverick
 
-See [TRAINING_GUIDE_CHINESE.md](TRAINING_GUIDE_CHINESE.md) for complete setup instructions.
+See [TRAINING_GUIDE.md](TRAINING_GUIDE.md) for complete setup instructions.
 
 ```bash
 # 1. Prepare your corpus
