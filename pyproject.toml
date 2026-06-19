@@ -31,6 +31,12 @@ train = [
   "loguru>=0.7.0",
   "huggingface_hub>=0.17.0"
 ]
+serve = [
+  "fastapi>=0.103.0",
+  "uvicorn>=0.23.0",
+  "vllm>=0.1.0",
+  "pydantic>=2.8.0"
+]
 
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]

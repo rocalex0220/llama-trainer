@@ -22,6 +22,11 @@ Requires-Dist: peft>=0.5.0; extra == "train"
 Requires-Dist: wandb>=0.15.0; extra == "train"
 Requires-Dist: loguru>=0.7.0; extra == "train"
 Requires-Dist: huggingface_hub>=0.17.0; extra == "train"
+Provides-Extra: serve
+Requires-Dist: fastapi>=0.103.0; extra == "serve"
+Requires-Dist: uvicorn>=0.23.0; extra == "serve"
+Requires-Dist: vllm>=0.1.0; extra == "serve"
+Requires-Dist: pydantic>=2.8.0; extra == "serve"
 
 # Llama Trainer
 

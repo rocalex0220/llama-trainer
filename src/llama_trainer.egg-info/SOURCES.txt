@@ -5,6 +5,7 @@ src/llama_trainer/cli.py
 src/llama_trainer/config.py
 src/llama_trainer/dataset.py
 src/llama_trainer/modeling.py
+src/llama_trainer/serve.py
 src/llama_trainer/trainer.py
 src/llama_trainer.egg-info/PKG-INFO
 src/llama_trainer.egg-info/SOURCES.txt
